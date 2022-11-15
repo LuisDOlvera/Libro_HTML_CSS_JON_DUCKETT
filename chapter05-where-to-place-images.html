@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Where To Place Images In Your Code</title>
+</head>
+<body>
+    <h1>Where To Place Images In Your Code</h1>
+    
+    <p>Dónde se coloca una imagen en el código afectará la forma en que se muestra. Aquí hay tres ejemplos de colocación de imágenes que producen diferentes resultados.</p>
+
+   <ol>
+    <li><b>Antes del Parrafo:</b>El parrafo comienza en una nueva línea después de la imágen</li>
+    <li><b>Dentro del Inicio del Párrafo:</b>La primera fila de texto, se alinea con la parte inferior de la imágen.</li>
+    <li><b>En Medio de un Párrafo:</b>La imagen es colocada entre las palabras del parrafo en el que aparece.</li>
+   </ol>
+   
+   <img src="images/Pajaro.jpg" alt="Pájaro" width="100" height="100" />
+   <p>Hay alrededor de 10.000 especies vivas de aves que habitan en diferentes ecosistemas desde el Ártico hasta la Antártida. Muchas especies realizan migraciones anuales de larga distancia y muchas más realizan viajes irregulares más cortos.</p>
+   <hr />
+
+   <p><img src="images/Pajaro.jpg" alt="Pájaro" width="100" height="100" />Hay alrededor de 10.000 especies vivas de aves que habitan en diferentes ecosistemas desde el Ártico hasta la Antártida. Muchas especies realizan migraciones anuales de larga distancia y muchas más realizan viajes irregulares más cortos.</p>
+
+   <hr />
+
+   <p>Hay alrededor de 10.000 especies vivas de aves que habitan en diferentes ecosistemas desde el Ártico hasta la Antártida. <img src="images/Pajaro.jpg" alt="Pájaro" width="100" height="100" /> Muchas especies realizan migraciones anuales de larga distancia y muchas más realizan viajes irregulares más cortos.</p>
+
+   <hr />
+
+   <p>El lugar donde coloca la imagen en el código es importante porque los navegadores muestran elementos HTML en una de dos formas:</p>
+
+   <p><b>Los elementos de bloque siempre aparecen en una nueva línea.</b> Los ejemplos de elementos de bloque incluyen los elementos h1 y p. Si al img le sigue un elemento de nivel de bloque (como un párrafo), el elemento de nivel de bloque se ubicará en una nueva línea después de la entrada, como se muestra en el primer ejemplo de esta página.</p>
+    
+   <p><b>Los elementos en línea se ubican dentro de un elemento de nivel de bloque y no comienzan en una nueva línea.</b> Ejemplos de elementos en línea incluyen a los elementos  b, em, e img. </p>
+
+   <p>Si el elemento img está dentro de un elemento de nivel de bloque, cualquier texto u otros elementos en línea fluirán alrededor de la imagen, como se muestra en el segundo y tercer ejemplo de esta página.</p>
+
+   <h2>Código Antiguo: Alineando Imágenes Horizontalmente</h2>
+
+   <h3>Align</h3>
+   <p>El atributo <b>align</b> se usaba comúnmente para indicar cómo otras partes de una página deberían fluir alrededor de una imagen. Se eliminó de HTML5 y los nuevos sitios web deberían usar CSS para controlar la alineación de las imágenes.</p>
+
+   <p>Lo he discutido aquí porque es probable que lo encuentre si mira el código anterior, y porque algunos editores visuales aún insertan este atributo cuando indica cómo se debe alinear una imagen.</p>
+
+   <h2>El Atributo Align puede tener estos valores Horizontales:</h2>
+
+   <h3>left</h3>
+   <p>Esto alinea la imagen a la izquierda (permitiendo que el texto fluya alrededor de este lado derecho)</p>
+
+   <p><img src="Images/pajaro.jpg" alt="Pájaro" width="100" height="100" align="left" />Hay alrededor de 10.000 especies vivas de aves que habitan en diferentes ecosistemas desde el Ártico hasta la Antártida. Muchas especies realizan migraciones anuales de larga distancia y muchas más realizan viajes irregulares más cortos</p>
+   <hr />
+
+   <h3>rigth</h3>
+   <p>Esto alinea la imagen a la derecha (permitiendo que el texto fluya alrededor de este lado izquierdo)</p>
+
+   <p><img src="Images/pajaro.jpg" alt="Pájaro" width="100" height="100" align="right" />Hay alrededor de 10.000 especies vivas de aves que habitan en diferentes ecosistemas desde el Ártico hasta la Antártida. Muchas especies realizan migraciones anuales de larga distancia y muchas más realizan viajes irregulares más cortos</p>
+   <hr />
+
+   <p>Esto se ve mucho mejor que tener una línea de texto al lado de la imagen (como se muestra en el ejemplo anterior).
+
+    Cuando le da al atributo de alineación un valor de izquierda, la imagen se coloca a la izquierda y el texto fluye a su alrededor.
+    
+    Cuando el texto fluye hasta el borde de una imagen, puede dificultar su lectura.</p>
+</body>
+</html>
